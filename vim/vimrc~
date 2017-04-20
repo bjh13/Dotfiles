@@ -1,0 +1,75 @@
+" Setup pathogen
+execute pathogen#infect()
+
+"Force hjkl use
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" Turn off strict compatibility with legacy vi
+set nocompatible
+
+"Turn on filetype detection
+filetype plugin indent on
+
+" Turn off highlight matches and turn on incremental searching
+set nohlsearch
+set incsearch
+
+"Display line numbers
+set number
+
+"Syntax highlighting on
+syntax enable
+
+"Theme
+set background=dark
+set t_Co=256
+colorscheme base16-greenscreen
+
+"Gui fonts
+if has("gui_running")
+    if has("gui_athena")
+        set guifont=-*-courier\ code-*-r-*-*-17-*-*-*-*-*-*-*
+    elseif has("gui_win32")
+    	set guifont=Courier\ Code:h12:cANSI
+    endif
+endif
+
+" Allow proper coying and pasting with the mouse
+set mouse=a
+
+" Set autoindent and 4 space soft tabs
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set autoindent
+
+" Set word wrapping at 80 characters
+set tw=80
+
+" Set word wrapping with no linebreaks when editing text
+au BufRead,BufNewFile *.txt,*.tex set wrap linebreak nolist textwidth=0 wrapmargin=0
+
+" Set status line to always be displayed
+set laststatus=2
+
+" Enable spell checking
+nmap <Leader>S <ESC>:setlocal spell spelllang=en_us<CR>
+set mousemodel=popup
+
+" Change backspace to act like other applications
+set backspace=2
+
+" Allow backspace and cursor keys to wrap to next and previous line
+set whichwrap+=<,>,h,l
+
+" make find search for files here, then in the cd dir
+autocmd FileType ruby set path=./**,**
+
+"Set errors messages to flash
+set noerrorbells
+set visualbell
+
