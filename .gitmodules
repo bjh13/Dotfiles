@@ -16,3 +16,9 @@
 [submodule "vim/bundle/TeTrIs.vim"]
 	path = vim/bundle/TeTrIs.vim
 	url = https://github.com/vim-scripts/TeTrIs.vim.git
+[submodule "vim/bundle/dracula-theme"]
+	path = vim/bundle/dracula-theme
+	url = https://github.com/dracula/vim.git
+[submodule "vim/bundle/vim-colors_atelier-schemes"]
+	path = vim/bundle/vim-colors_atelier-schemes
+	url = https://github.com/atelierbram/vim-colors_atelier-schemes.git

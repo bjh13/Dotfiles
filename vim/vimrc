@@ -27,7 +27,7 @@ syntax enable
 "Theme
 set background=dark
 set t_Co=256
-colorscheme base16-greenscreen
+colorscheme Atelier_SulphurpoolDark
 
 "Gui fonts
 if has("gui_running")
