@@ -1,6 +1,3 @@
-" Setup pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
 
 "Force hjkl use
 noremap <Up> <NOP>
@@ -27,7 +24,7 @@ syntax enable
 "Theme
 set background=dark
 set t_Co=256
-colorscheme Atelier_SulphurpoolDark
+colorscheme base16-greenscreen
 
 "Gui fonts
 if has("gui_running")
